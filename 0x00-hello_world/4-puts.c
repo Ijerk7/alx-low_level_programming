@@ -1,26 +1,22 @@
 #!/bin/bash
 #include <stdio.h>
 
+
+
 /**
  *
- *  * main - Entry point
+ *  * main - prints the phrase "Programming is like building a multilingual puzzle
  *
- *   *
+ *   * Return: 0 if exited properly, non-zero otherwise
  *
- *    * Return: Always 0 (Success)
- *
- *     */
+ *    */
 
 int main(void)
 
 {
 
-		char test_str[] = "\"Programming is like building a multilingual puzzle";
+		puts("\"Programming is like building a multilingual puzzle");
 
-
-
-			puts(test_str);
-
-				return (0);
+			return (0);
 
 }
