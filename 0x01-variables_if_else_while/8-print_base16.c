@@ -10,7 +10,7 @@ int main(void)
 	int d = 48;
 	char c = 'a';
 
-        while (d < 58)
+	while (d < 58)
 	{
 		putchar(d);
 		d++;
