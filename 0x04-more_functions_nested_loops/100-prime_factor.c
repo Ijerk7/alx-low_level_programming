@@ -7,35 +7,31 @@
  * followed by a new line
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	long int n;
-	long int max;
-	long int i;
+long int max = -1, n = 612852475143;
+int i = 3;
 
-	n = 612852475143;
-	max = -1;
-
-	while (n % 2 == 0)
+while (n % 2 == 0)
+{
+max = 2;
+n /= 2;
+}
+while (i <= sqrt(n))
+{
+	while (n % i == 0)
 	{
-		max = 2
-			n /= 2;
+		max = i;
+		n = n / i;
 	}
+	i += 2;
+}
+if (n > 2)max = n;
+max = n;
+printf("%ld\n", max);
+return (0);
+}
 
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		while (n % i == 0)
-		{
-			max = i;
-			n = n / i;
-		}
-	}
 
-	if (n > 2)
-		max = n;
 
-	printf("%ld\n", max);
-
-	return (0);
 }
